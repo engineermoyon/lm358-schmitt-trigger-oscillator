@@ -20,9 +20,9 @@ I created a voltage reference of 2.5V. Then connected the capacitor to a resisto
 
 The capacitor gets charged through a 10k ohm resistor, then it switches output when it reaches upper and lower threshold voltages. This repeats indefinitely. 
 
-The error analysis: 
-There was a 25% deviation from the theoretical and calculated analysis. 
+The error analysis:  
 ![IMG_5326 (1)](https://github.com/user-attachments/assets/d5bcc889-830a-44ce-876b-2a337672b07e)
+There was a 25% deviation from the theoretical and calculated analysis.
 
 
 The simulation confirms the Schmitt trigger operation and hysteresis! (I did not think it would be that close). 
@@ -34,10 +34,13 @@ Initially, I had opted in to use an LM555 timer IC but it broke during handling 
 I was battling with finding the correct capacitor for the circuit. The 470uF was making the LED blink slower than the 220uF, but also I had used a feedback resistor of 100k ohm to see how it behaved. So the dilemma was between choosing the right capacitor or resistor, but through maths I was able to decide on the frequency I prefered. Because I wanted to show a couple of blinks per cycle, I kept the capacitor at 220uF and switched the 100k resistor until I could find the best value for demonstration. (10k ohm was a good option). Additionally, the 100k was making the LED blink extremly fast (145 blinks per minute!) so I had to change it. 
 
 My future edits: 
-Add potentiometer for adjustable frequency
-Design PCB version for permanent installation
-Add 7-segment display showing count
+Add potentiometer for adjustable frequency.
+
+Design PCB version for permanent installation.
+
+Add 7-segment display showing count.
+
 Implement dual LED (alternating blink) using second half of LM358
-Add enable/disable switch
+Add enable/disable switch.
 
 peeeeew!
