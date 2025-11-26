@@ -33,6 +33,12 @@ Initially, I had opted in to use an LM555 timer IC but it broke during handling 
 
 I was battling with finding the correct capacitor for the circuit. The 470uF was making the LED blink slower than the 220uF, but also I had used a feedback resistor of 100k ohm to see how it behaved. So the dilemma was between choosing the right capacitor or resistor, but through maths I was able to decide on the frequency I prefered. Because I wanted to show a couple of blinks per cycle, I kept the capacitor at 220uF and switched the 100k resistor until I could find the best value for demonstration. (10k ohm was a good option). Additionally, the 100k was making the LED blink extremly fast (145 blinks per minute!) so I had to change it. 
 
+Circuit schematic made from TinkerCad: 
+<img width="1280" height="535" alt="Oscillator circuit" src="https://github.com/user-attachments/assets/2ec85ec4-aa45-449d-995f-179e4cbdae55" />
+
+Here is how the diagram looks like in a mock PCB format. (I will surely design a PCB for this circuit). 
+[MockPCBoscillator.pdf](https://github.com/user-attachments/files/23759144/MockPCBoscillator.pdf)
+
 My future edits: 
 Add potentiometer for adjustable frequency.
 
@@ -42,5 +48,7 @@ Add 7-segment display showing count.
 
 Implement dual LED (alternating blink) using second half of LM358
 Add enable/disable switch.
+
+
 
 peeeeew!
